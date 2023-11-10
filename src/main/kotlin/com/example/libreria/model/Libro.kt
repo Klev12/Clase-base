@@ -8,14 +8,13 @@ import jakarta.persistence.Id
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "persona")
-class Persona {
+@Table(name = "libro")
+class Libro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(updatable = false)
     var id: Long? = null
-    var nombre: String? = null
-    var direccion: String? = null
+    var nickname: String? = null
+    var autor: String? = null
 
 }
-
